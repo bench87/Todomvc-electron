@@ -1,0 +1,42 @@
+{
+  "name": "TodoMVC",
+  "description": "",
+  "version": "0.0.1",
+  "homepage": "",
+  "private": true,
+  "scripts": {
+    "lint": "./node_modules/gulp/bin/gulp.js lint",
+    "build": "./node_modules/gulp/bin/gulp.js build",
+    "watch": "./node_modules/gulp/bin/gulp.js",
+    "postinstall": "npm run build"
+  },
+  "keywords": [],
+  "dependencies": {
+    "babelify": "^6.1.2",
+    "classnames": "^2.1.2",
+    "exorcist": "^0.4.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-load-plugins": "^1.0.0-rc.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "immutable": "^3.7.4",
+    "mold-source-map": "^0.4.0",
+    "react": "^0.13.3",
+    "react-addons": "^0.9.1-deprecated",
+    "react-mixin": "^1.4.0",
+    "react-router": "^0.13.3",
+    "reflux": "^0.2.8",
+    "todomvc-app-css": "^2.0.1",
+    "todomvc-common": "^1.0.2",
+    "uuid": "^2.0.1",
+    "vinyl-transform": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^0.23.0",
+    "eslint-plugin-react": "^2.5.2",
+    "esprima-fb": "^15001.1.0-dev-harmony-fb",
+    "gulp-eslint": "^0.14.0",
+    "gulp-jscs": "^1.6.0"
+  }
+}
