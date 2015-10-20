@@ -40,7 +40,7 @@ exports.vendor = function(gulp, plugins) {
 
 exports.client = function(gulp, plugins) {
     return function() {
-        var development = process.env.NODE_ENV === 'development';
+        var isDevelopment = process.env.NODE_ENV !== 'production';
         var buildDir = path.join(__dirname, '../build');
         var stream;
 
@@ -59,7 +59,7 @@ exports.client = function(gulp, plugins) {
                 libs.forEach(function(lib) {bundler.external(lib); });
             });
 
-        if (development) {
+        if (isDevelopment) {
             stream = stream
                 .pipe(transform(function() {return mold.transformSourcesRelativeTo(path.join(__dirname, '../')); }))
                 .pipe(transform(function() {return exorcist('./build/' + buildname + '.js.map'); }))
