@@ -1,6 +1,6 @@
 # TodoMVC(React + Reflux + ES6)
 
-React + Reflux + ES6 조합으로 개발한 TodoMVC.
+React + Reflux + ES6 + Electron 조합으로 개발한 TodoMVC.
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ React + Reflux + ES6 조합으로 개발한 TodoMVC.
 $ npm install
 $ npm run lint
 $ npm run build
-$ npm run watch
+$ npm run package
 ```
 
 ## License

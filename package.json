@@ -4,17 +4,23 @@
   "version": "0.0.1",
   "homepage": "",
   "private": true,
+  "main": "main.js",
   "scripts": {
     "lint": "./node_modules/gulp/bin/gulp.js lint",
     "build": "./node_modules/gulp/bin/gulp.js build",
     "watch": "./node_modules/gulp/bin/gulp.js",
-    "postinstall": "npm run build"
+    "postinstall": "npm run build",
+    "server": "node ./server/app.js",
+    "package": "electron-packager . TodoMVC --platform=darwin --arch=all --version=0.30.0 --icon=images/icon.icns --prune --overwrite --ignore=node_modules/"
   },
   "keywords": [],
   "dependencies": {
     "babelify": "^6.1.2",
+    "body-parser": "^1.14.1",
     "classnames": "^2.1.2",
+    "electron-packager": "^5.1.0",
     "exorcist": "^0.4.0",
+    "express": "^4.13.3",
     "gulp": "^3.9.0",
     "gulp-browserify": "^0.5.1",
     "gulp-load-plugins": "^1.0.0-rc.1",
